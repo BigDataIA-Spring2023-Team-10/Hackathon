@@ -34,13 +34,13 @@ def login_database(username, password):
 
 # Define the Streamlit app
 def main():
-
+    
     if "logged_in_user" not in st.session_state:
         st.session_state['logged_in_user'] = False
 
     # Add a title to the app
     st.title("Patient Login")
-
+    
     # Create input fields for the username and password
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")

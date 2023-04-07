@@ -1,0 +1,9 @@
+host = value
+user =  value
+password =  value
+db =  value
+bucket_name =  value
+open_api_key= value
+
+[gcp_service_account]
+details
