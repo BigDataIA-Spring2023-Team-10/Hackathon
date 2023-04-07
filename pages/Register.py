@@ -25,7 +25,8 @@ def write_database(Name,Age,Gender,medical_hist,password):
         print("Failed to insert record into table {}".format(error))    
 
 def main():
-    st.title("Patient Registeration")
+
+    st.title("Patient Registration")
     
     name = st.text_input("Name:")
     password = st.text_input("Enter a password", type="password")
