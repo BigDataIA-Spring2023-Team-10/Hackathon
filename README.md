@@ -17,6 +17,7 @@
 
 >[Access the Codelabs document here](https://codelabs-preview.appspot.com/?file_id=1OMODb5qxvAS9P0_J97sy1icvkCxuiHOrHvm_0oLl6yI#2) 🚀 <br>
 > [🚀 Application link](https://bigdataia-spring2023-team-10-hackathon-home-kh1paw.streamlit.app/)<br>
+> [🚀 Presentation Link](https://docs.google.com/presentation/d/1-e6DWdR9B56G8ToTjW6FpeFECKch_HJCNCi5vDoQjLo/edit#slide=id.g229c732cb23_2_11) <br>
 
 
 
@@ -30,9 +31,9 @@ We have built a meeting intelligence application that reads an audio file, conve
 
 # Process Outline
 
->1. We are creating 2 DAGs, first Adhoc (runs on single audio file), second Batch (runs on a batch of audio files)
+>1. We are creating a portal where a patient can login and thus the login entering the previous medical history to track the previous medical report
 
->2. Download audio file from GCP.
+>2. The Symtoms suggested by the user and prompt with the suggestions.
 
 >3. Read and convert audio to transcript using Whisper Api
 
