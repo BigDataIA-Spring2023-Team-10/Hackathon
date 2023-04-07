@@ -97,13 +97,14 @@ def main():
         submitted = st.form_submit_button("Upload Recording")
         
         with st.spinner('Wait for it...'):
-            if uploaded_file is not None and submitted:
-                model = whisper.load_model("base")
+            if uploaded_file is not None:
+                # model = whisper.load_model("base")
                 with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
                     tmp_file.write(uploaded_file.read())
                     tmp_file.flush()
                     os.fsync(tmp_file.fileno())
-                result = model.transcribe(tmp_file.name)['text']
+                # result = model.transcribe(tmp_file.name)['text']
+                result=openai.Audio.transcribe(api_key=openai.api_key, model='whisper-1', file=tmp_file.name, response_format='text')
                 os.unlink(tmp_file.name)
                 
     # Add a button to send the user input
